@@ -1,11 +1,13 @@
 import Producto from "../src/components/producto";
 function App() {
   return (
-    <>
-      <Producto title="Producto1" price="400" />
-      <Producto title="Producto2" price="700" />
-      <Producto title="Producto3" price="1000" />
-    </>
+    <div>
+      <div>
+        <Producto title="Frutilla" price="400" stock="0" />
+        <Producto title="Maracuyá" price="700" stock="10" />
+        <Producto title="Durazno" price="1000" stock="20" />
+      </div>
+    </div>
   );
 }
 export default App;

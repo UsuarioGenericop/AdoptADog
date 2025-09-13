@@ -1,9 +1,11 @@
 import React from "react";
-const Producto = ({ title, price }) => {
+const Producto = ({ title = "Título por defecto", price = "1000", stock }) => {
   return (
     <>
-      <h1 className="producto">{title}</h1>
-      <p>Precio: {price}</p>
+      <p className={stock <= 0 ? "sinStock" : null}>
+        {" "}
+        {title} - Precio: {price} <span>stock: {stock}</span>
+      </p>
     </>
   );
 };
